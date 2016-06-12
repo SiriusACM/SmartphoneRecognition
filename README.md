@@ -1,9 +1,9 @@
-### SmartphoneRecognition
+# SmartphoneRecognition
 
 ## Generate a tidy data table with data collected from the accelerometers from the Samsung Galaxy S smartphone 
 
-# Global environnement for a tidy "ready to work" dataset
-# selected_rec
+### Global environnement for a tidy "ready to work" dataset
+### selected_rec
 
 Classes	: ‘data.table’ and 'data.frame'
 Dim		: 10299 obs. of  70 variables:
@@ -12,8 +12,8 @@ Dim		: 10299 obs. of  70 variables:
 * Origin			: chr "test" "train" ; origin of records, if needed
 * Activity_Label	: chr	"LAYING" "SITTING" "STANDING" "WALKING" "WALKING_DOWNSTAIRS" "WALKING_UPSTAIRS"
 
-# Global environnement dataset for independent tidy data set with the average of each variable for each activity and each subject
-# mean_dataset
+### Global environnement dataset for independent tidy data set with the average of each variable for each activity and each subject
+### mean_dataset
 
 Classes	: ‘grouped_dt’, ‘tbl_dt’, ‘tbl’, ‘tbl_dt’, ‘tbl’, ‘data.table’ and 'data.frame'
 Dim		: 11880 obs. of  4 variables:
@@ -24,7 +24,7 @@ Fields	:
 * meanVal			: num 	values of mesurments
 Ordered by Activity_Label, Cobayes, variable
 
-# List of mesurement
+### List of mesurement
 * tBodyAcc-mean()-X          : num  0.282 0.256 0.255 0.343 0.276 ...
 * tBodyAcc-mean()-Y          : num  -0.0377 -0.06455 0.00381 -0.01445 -0.02964 ...
 * tBodyAcc-mean()-Z          : num  -0.1349 -0.0952 -0.1237 -0.1674 -0.1426 ...
@@ -92,7 +92,7 @@ Ordered by Activity_Label, Cobayes, variable
 * fBodyBodyGyroJerkMag-mean(): num  -0.432 -0.428 -0.401 -0.218 -0.188 ...
 * fBodyBodyGyroJerkMag-std() : num  -0.476 -0.493 -0.482 -0.299 -0.3 ...
 
-# Exemples :
+### Exemples :
 
 head(selected_rec)
    Activity tBodyAcc-mean()-X tBodyAcc-mean()-Y tBodyAcc-mean()-Z tBodyAcc-std()-X tBodyAcc-std()-Y
