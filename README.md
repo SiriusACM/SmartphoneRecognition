@@ -12,6 +12,8 @@ Dim		: 10299 obs. of  70 variables:
 * Origin			: chr "test" "train" ; origin of records, if needed
 * Activity_Label	: chr	"LAYING" "SITTING" "STANDING" "WALKING" "WALKING_DOWNSTAIRS" "WALKING_UPSTAIRS"
 
+=> Exported to file : tidy_readyToWork.csv
+
 ### Global environnement dataset for independent tidy data set with the average of each variable for each activity and each subject
 ### mean_dataset
 
@@ -24,7 +26,10 @@ Fields	:
 * meanVal			: num 	values of mesurments
 Ordered by Activity_Label, Cobayes, variable
 
+=> Exported to file : tidy_mean.csv
+
 ### List of mesurement
+
 * tBodyAcc-mean()-X          : num  0.282 0.256 0.255 0.343 0.276 ...
 * tBodyAcc-mean()-Y          : num  -0.0377 -0.06455 0.00381 -0.01445 -0.02964 ...
 * tBodyAcc-mean()-Z          : num  -0.1349 -0.0952 -0.1237 -0.1674 -0.1426 ...
