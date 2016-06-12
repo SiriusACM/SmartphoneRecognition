@@ -94,7 +94,7 @@ Ordered by Activity_Label, Cobayes, variable
 
 ### Exemples :
 
-head(selected_rec)
+`head(selected_rec)
    Activity tBodyAcc-mean()-X tBodyAcc-mean()-Y tBodyAcc-mean()-Z tBodyAcc-std()-X tBodyAcc-std()-Y
 1:        1         0.2820216      -0.037696218       -0.13489730       -0.3282802      -0.13715339
 2:        1         0.2558408      -0.064550029       -0.09518634       -0.2292069       0.01650608
@@ -213,9 +213,9 @@ head(selected_rec)
 3:        WALKING
 4:        WALKING
 5:        WALKING
-6:        WALKING
+6:        WALKING`
 
-head(mean_dataset,n=70)
+`head(mean_dataset,n=70)
    Activity_Label Cobayes                    variable      meanVal
 1          LAYING       1           tBodyAcc-mean()-X  0.221598244
 2          LAYING       1           tBodyAcc-mean()-Y -0.040513953
@@ -286,4 +286,4 @@ head(mean_dataset,n=70)
 67         LAYING       2           tBodyAcc-mean()-X  0.281373404
 68         LAYING       2           tBodyAcc-mean()-Y -0.018158740
 69         LAYING       2           tBodyAcc-mean()-Z -0.107245610
-70         LAYING       2            tBodyAcc-std()-X -0.974059465
+70         LAYING       2            tBodyAcc-std()-X -0.974059465`
