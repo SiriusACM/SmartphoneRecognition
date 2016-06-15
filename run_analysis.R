@@ -93,16 +93,11 @@ selected_rec <- merge(selected_rec, alabels, by.x = "Activity", by.y = "IDAct");
 
 ## From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-group_dataset <- selected_rec %>%
+mean_dataset <- selected_rec %>%
 				dplyr::select(-Activity,-Origin) %>%
-				reshape2::melt(id=c("Cobayes","Activity_Label"),measure.vars=c(1:66)) %>%
 				dplyr::group_by(Activity_Label, add = TRUE) %>%
-				dplyr::group_by(Cobayes, add = TRUE);
+				dplyr::group_by(Cobayes, add = TRUE) %>%
+				arrange(Activity_Label,Cobayes) %>%
+				summarise_each(funs(mean));
 
-mean_dataset <- group_dataset %>%
-				dplyr::group_by(variable, add = TRUE) %>%
-				dplyr::summarize(meanVal = mean(value)) %>%
-				arrange(Activity_Label,Cobayes,variable);
-
-rm(group_dataset);
-
+write.table(mean_dataset,file="tidy_mean.csv",row.name=FALSE)
